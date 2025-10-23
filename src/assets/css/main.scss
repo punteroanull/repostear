@@ -1,0 +1,97 @@
+// Custom styles overriding PrimeVue
+
+.p-card {
+  @apply shadow-sm rounded-lg;
+  transition: box-shadow 0.2s ease;
+
+  &:hover {
+    @apply shadow-md;
+  }
+
+  .p-card-title {
+    @apply text-xl font-medium;
+  }
+
+  .p-card-content {
+    @apply py-4;
+  }
+}
+
+.p-button {
+  @apply font-medium;
+  transition: all 0.2s ease;
+}
+
+.p-dropdown {
+  @apply w-full;
+}
+
+.p-inputtext {
+  @apply w-full;
+}
+
+.p-dialog {
+  .p-dialog-header {
+    @apply py-4 px-6;
+  }
+  
+  .p-dialog-content {
+    @apply p-6;
+  }
+  
+  .p-dialog-footer {
+    @apply py-4 px-6;
+  }
+}
+
+.p-menu {
+  @apply min-w-[200px];
+}
+
+// Custom animation classes
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-up-enter-active,
+.slide-up-leave-active {
+  transition: all 0.3s ease;
+}
+
+.slide-up-enter-from,
+.slide-up-leave-to {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+// Chart customizations
+.chart-container {
+  @apply p-4 bg-white dark:bg-neutral-800 rounded-lg shadow-sm;
+  height: 300px;
+  max-height: 300px;
+  position: relative;
+}
+
+// Card transitions
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.card-enter-active,
+.card-leave-active {
+  transition: all 0.3s ease;
+}
+
+.card-enter-from,
+.card-leave-to {
+  opacity: 0;
+  transform: translateY(30px);
+}

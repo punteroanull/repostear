@@ -1,0 +1,182 @@
+{
+  "nav": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "pricing": "Pricing",
+    "features": "Features"
+  },
+  "auth": {
+    "login": "Log in",
+    "register": "Sign up",
+    "forgotPassword": "Forgot password?",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "name": "Full name",
+    "rememberMe": "Remember me",
+    "loginTitle": "Welcome back",
+    "loginSubtitle": "Sign in to your account to continue",
+    "registerTitle": "Create your account",
+    "registerSubtitle": "Start your social media analytics journey",
+    "noAccount": "Don't have an account?",
+    "alreadyAccount": "Already have an account?",
+    "emailPlaceholder": "email address",
+    "passwordPlaceholder": "Enter your password",
+    "namePlaceholder": "John Doe",
+    "loginSuccess": "Login successful!",
+    "welcomeBack": "Welcome back to Repostear",
+    "registerSuccess": "Registration successful!",
+    "welcomeNew": "Welcome to Repostear",
+    "loginFailed": "Login failed",
+    "registerFailed": "Registration failed",
+    "logout": "Log out",
+    "errors": {
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email address",
+      "passwordRequired": "Password is required",
+      "passwordLength": "Password must be at least 8 characters",
+      "passwordMatch": "Passwords do not match",
+      "nameRequired": "Name is required",
+      "general": "Something went wrong. Please try again."
+    }
+  },
+  "footer": {
+    "tagline": "Advanced social media analytics and auditing for growing your audience",
+    "product": "Product",
+    "features": "Features",
+    "pricing": "Pricing",
+    "blog": "Blog",
+    "support": "Support",
+    "help": "Help Center",
+    "faq": "FAQ",
+    "contact": "Contact Us",
+    "legal": "Legal",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "cookies": "Cookie Policy",
+    "rights": "All rights reserved."
+  },
+  "home": {
+    "hero": {
+      "title": "Master Your Social Media Presence",
+      "subtitle": "Comprehensive analytics and insights to grow your audience and maximize engagement",
+      "getStarted": "Get Started",
+      "learnMore": "Learn More"
+    },
+    "platforms": {
+      "title": "Supported Platforms",
+      "comingSoon": "Coming Soon"
+    },
+    "features": {
+      "title": "Powerful Analytics Tools",
+      "subtitle": "Everything you need to understand and grow your social media presence",
+      "followerTracking": {
+        "title": "Follower Tracking",
+        "description": "Track followers over time, see who you've gained and lost, and understand your audience growth patterns"
+      },
+      "analytics": {
+        "title": "Detailed Analytics",
+        "description": "Comprehensive analytics on your followers, posts, and engagement to help you understand what works"
+      },
+      "engagement": {
+        "title": "Engagement Insights",
+        "description": "Discover your top engaging followers and learn what content drives the most interaction"
+      },
+      "contentAnalysis": {
+        "title": "Content Analysis",
+        "description": "Analyze your most-used words and their impact on engagement to refine your messaging"
+      },
+      "giveaways": {
+        "title": "Giveaway Management",
+        "description": "Create and manage giveaways with custom rules to grow your audience and reward engagement"
+      },
+      "lists": {
+        "title": "Lists & Blocking",
+        "description": "Manage lists and blocking features to organize your network and improve your experience"
+      }
+    },
+    "plans": {
+      "title": "Choose Your Plan",
+      "subtitle": "Select the plan that works best for your needs and budget",
+      "popular": "Most Popular",
+      "freeDescription": "Basic access for individuals",
+      "proDescription": "For creators getting started",
+      "influencerDescription": "For established influencers",
+      "businessDescription": "For agencies and brands",
+      "oneAccount": "1 social media account",
+      "twoAccounts": "2 social media accounts",
+      "fiveAccounts": "5 social media accounts",
+      "unlimitedAccounts": "Unlimited accounts",
+      "limitedData": "Limited data access",
+      "fullData": "Full data access",
+      "updates24h": "Updates every 24 hours",
+      "updates6h": "Updates every 6 hours",
+      "updates2h": "Updates every 2 hours",
+      "realTime": "Real-time updates",
+      "noTokens": "No giveaway tokens",
+      "limitedTokens": "Limited giveaway tokens",
+      "standardTokens": "Standard giveaway tokens",
+      "unlimitedTokens": "Unlimited giveaway tokens",
+      "getStarted": "Get Started",
+      "contactSales": "Contact Sales"
+    },
+    "cta": {
+      "title": "Ready to Transform Your Social Media Strategy?",
+      "subtitle": "Join thousands of creators and brands who trust Repostear to grow their audience",
+      "getStarted": "Start Your Free Trial"
+    }
+  },
+  "dashboard": {
+    "dashboard": "Dashboard",
+    "accounts": "Accounts",
+    "accountDetails": "Account Details",
+    "addAccount": "Add Account",
+    "followers": "Followers",
+    "interactions": "Interactions",
+    "posts": "Posts",
+    "statistics": "Statistics",
+    "wordAnalysis": "Word Analysis",
+    "lists": "Lists",
+    "blocking": "Blocking",
+    "giveaways": "Giveaways",
+    "createGiveaway": "Create Giveaway",
+    "giveawayDetails": "Giveaway Details",
+    "subscription": "Subscription",
+    "subscriptionPlans": "Subscription Plans",
+    "tokens": "Tokens",
+    "settings": "Settings",
+    "menu": "Menu",
+    "selectAccount": "Select Account",
+    "noAccounts": "You don't have any accounts yet. Add your first social media account to get started.",
+    "menu": {
+      "main": "Main",
+      "analytics": "Analytics",
+      "giveaways": "Giveaways",
+      "bluesky": "Bluesky",
+      "subscription": "Subscription"
+    }
+  },
+  "user": {
+    "dashboard": "Dashboard",
+    "accounts": "My Accounts",
+    "subscription": "Subscription",
+    "settings": "Settings",
+    "profile": "Profile"
+  },
+  "subscription": {
+    "free": "Free",
+    "pro": "Pro",
+    "influencer": "Influencer",
+    "business": "Business",
+    "month": "month",
+    "year": "year",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "current": "Current Plan",
+    "upgrade": "Upgrade",
+    "downgrade": "Downgrade",
+    "cancel": "Cancel Subscription",
+    "tokens": "Tokens",
+    "buyTokens": "Buy Tokens"
+  }
+}

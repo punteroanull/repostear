@@ -1,0 +1,182 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "dashboard": "Panel",
+    "pricing": "Precios",
+    "features": "Características"
+  },
+  "auth": {
+    "login": "Iniciar sesión",
+    "register": "Registrarse",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar contraseña",
+    "name": "Nombre completo",
+    "rememberMe": "Recordarme",
+    "loginTitle": "Bienvenido de nuevo",
+    "loginSubtitle": "Inicia sesión en tu cuenta para continuar",
+    "registerTitle": "Crea tu cuenta",
+    "registerSubtitle": "Comienza tu viaje de análisis de redes sociales",
+    "noAccount": "¿No tienes una cuenta?",
+    "alreadyAccount": "¿Ya tienes una cuenta?",
+    "emailPlaceholder": "correo electrónico",
+    "passwordPlaceholder": "Ingresa tu contraseña",
+    "namePlaceholder": "Juan Pérez",
+    "loginSuccess": "¡Inicio de sesión exitoso!",
+    "welcomeBack": "Bienvenido de nuevo a Repostear",
+    "registerSuccess": "¡Registro exitoso!",
+    "welcomeNew": "Bienvenido a Repostear",
+    "loginFailed": "Error al iniciar sesión",
+    "registerFailed": "Error al registrarse",
+    "logout": "Cerrar sesión",
+    "errors": {
+      "emailRequired": "El correo electrónico es obligatorio",
+      "emailInvalid": "Por favor, introduce un correo electrónico válido",
+      "passwordRequired": "La contraseña es obligatoria",
+      "passwordLength": "La contraseña debe tener al menos 8 caracteres",
+      "passwordMatch": "Las contraseñas no coinciden",
+      "nameRequired": "El nombre es obligatorio",
+      "general": "Algo salió mal. Por favor, inténtalo de nuevo."
+    }
+  },
+  "footer": {
+    "tagline": "Análisis y auditoría avanzada de redes sociales para hacer crecer tu audiencia",
+    "product": "Producto",
+    "features": "Características",
+    "pricing": "Precios",
+    "blog": "Blog",
+    "support": "Soporte",
+    "help": "Centro de Ayuda",
+    "faq": "Preguntas Frecuentes",
+    "contact": "Contáctanos",
+    "legal": "Legal",
+    "terms": "Términos de Servicio",
+    "privacy": "Política de Privacidad",
+    "cookies": "Política de Cookies",
+    "rights": "Todos los derechos reservados."
+  },
+  "home": {
+    "hero": {
+      "title": "Domina tu Presencia en Redes Sociales",
+      "subtitle": "Análisis e información completos para hacer crecer tu audiencia y maximizar la participación",
+      "getStarted": "Comenzar",
+      "learnMore": "Saber Más"
+    },
+    "platforms": {
+      "title": "Plataformas Compatibles",
+      "comingSoon": "Próximamente"
+    },
+    "features": {
+      "title": "Potentes Herramientas de Análisis",
+      "subtitle": "Todo lo que necesitas para entender y hacer crecer tu presencia en redes sociales",
+      "followerTracking": {
+        "title": "Seguimiento de Seguidores",
+        "description": "Sigue a los seguidores a lo largo del tiempo, ve a quién has ganado y perdido, y comprende los patrones de crecimiento de tu audiencia"
+      },
+      "analytics": {
+        "title": "Análisis Detallado",
+        "description": "Análisis exhaustivo de tus seguidores, publicaciones e interacciones para ayudarte a entender qué funciona"
+      },
+      "engagement": {
+        "title": "Información sobre Interacciones",
+        "description": "Descubre a tus seguidores más interactivos y aprende qué contenido genera más interacción"
+      },
+      "contentAnalysis": {
+        "title": "Análisis de Contenido",
+        "description": "Analiza tus palabras más utilizadas y su impacto en las interacciones para refinar tu mensaje"
+      },
+      "giveaways": {
+        "title": "Gestión de Sorteos",
+        "description": "Crea y gestiona sorteos con reglas personalizadas para hacer crecer tu audiencia y recompensar la participación"
+      },
+      "lists": {
+        "title": "Listas y Bloqueo",
+        "description": "Gestiona las funciones de listas y bloqueo para organizar tu red y mejorar tu experiencia"
+      }
+    },
+    "plans": {
+      "title": "Elige tu Plan",
+      "subtitle": "Selecciona el plan que mejor se adapte a tus necesidades y presupuesto",
+      "popular": "Más Popular",
+      "freeDescription": "Acceso básico para individuos",
+      "proDescription": "Para creadores que están comenzando",
+      "influencerDescription": "Para influencers establecidos",
+      "businessDescription": "Para agencias y marcas",
+      "oneAccount": "1 cuenta de redes sociales",
+      "twoAccounts": "2 cuentas de redes sociales",
+      "fiveAccounts": "5 cuentas de redes sociales",
+      "unlimitedAccounts": "Cuentas ilimitadas",
+      "limitedData": "Acceso limitado a datos",
+      "fullData": "Acceso completo a datos",
+      "updates24h": "Actualizaciones cada 24 horas",
+      "updates6h": "Actualizaciones cada 6 horas",
+      "updates2h": "Actualizaciones cada 2 horas",
+      "realTime": "Actualizaciones en tiempo real",
+      "noTokens": "Sin tokens para sorteos",
+      "limitedTokens": "Tokens limitados para sorteos",
+      "standardTokens": "Tokens estándar para sorteos",
+      "unlimitedTokens": "Tokens ilimitados para sorteos",
+      "getStarted": "Comenzar",
+      "contactSales": "Contactar con Ventas"
+    },
+    "cta": {
+      "title": "¿Listo para Transformar tu Estrategia en Redes Sociales?",
+      "subtitle": "Únete a miles de creadores y marcas que confían en Repostear para hacer crecer su audiencia",
+      "getStarted": "Comienza tu Prueba Gratuita"
+    }
+  },
+  "dashboard": {
+    "dashboard": "Panel",
+    "accounts": "Cuentas",
+    "accountDetails": "Detalles de la Cuenta",
+    "addAccount": "Añadir Cuenta",
+    "followers": "Seguidores",
+    "interactions": "Interacciones",
+    "posts": "Publicaciones",
+    "statistics": "Estadísticas",
+    "wordAnalysis": "Análisis de Palabras",
+    "lists": "Listas",
+    "blocking": "Bloqueo",
+    "giveaways": "Sorteos",
+    "createGiveaway": "Crear Sorteo",
+    "giveawayDetails": "Detalles del Sorteo",
+    "subscription": "Suscripción",
+    "subscriptionPlans": "Planes de Suscripción",
+    "tokens": "Tokens",
+    "settings": "Configuración",
+    "menu": "Menú",
+    "selectAccount": "Seleccionar Cuenta",
+    "noAccounts": "Aún no tienes ninguna cuenta. Añade tu primera cuenta de redes sociales para comenzar.",
+    "menu": {
+      "main": "Principal",
+      "analytics": "Análisis",
+      "giveaways": "Sorteos",
+      "bluesky": "Bluesky",
+      "subscription": "Suscripción"
+    }
+  },
+  "user": {
+    "dashboard": "Panel",
+    "accounts": "Mis Cuentas",
+    "subscription": "Suscripción",
+    "settings": "Configuración",
+    "profile": "Perfil"
+  },
+  "subscription": {
+    "free": "Gratis",
+    "pro": "Pro",
+    "influencer": "Influencer",
+    "business": "Empresa",
+    "month": "mes",
+    "year": "año",
+    "monthly": "Mensual",
+    "yearly": "Anual",
+    "current": "Plan Actual",
+    "upgrade": "Mejorar",
+    "downgrade": "Bajar de Nivel",
+    "cancel": "Cancelar Suscripción",
+    "tokens": "Tokens",
+    "buyTokens": "Comprar Tokens"
+  }
+}
