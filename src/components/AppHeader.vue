@@ -26,7 +26,7 @@
           :options="languages"
           optionLabel="name"
           optionValue="code"
-          class="w-12 text-xs"
+          class="w-16"
           @change="changeLanguage"
         />
         
@@ -41,15 +41,15 @@
         
         <!-- Auth Buttons -->
         <template v-if="!isAuthenticated">
-          <Button 
-            :label="$t('auth.login')" 
-            class="p-button-text text-xs px-5 py-1 transition-all duration-150 active:scale-95 active:shadow-inner border border-white text-white hover:bg-white hover:text-neutral-900" 
-            @click="navigateTo('/auth/login')" 
+          <Button
+            :label="$t('auth.login')"
+            class="p-button-text text-sm px-6 py-2 whitespace-nowrap transition-all duration-150 active:scale-95 active:shadow-inner border border-white text-white hover:bg-white hover:text-neutral-900"
+            @click="navigateTo('/auth/login')"
           />
-          <Button 
-            :label="$t('auth.register')" 
-            class="p-button-text text-xs px-5 py-1 transition-all duration-150 active:scale-95 active:shadow-inner border border-white text-white hover:bg-white hover:text-neutral-900"
-            @click="navigateTo('/auth/register')" 
+          <Button
+            :label="$t('auth.register')"
+            class="p-button-text text-sm px-6 py-2 whitespace-nowrap transition-all duration-150 active:scale-95 active:shadow-inner border border-white text-white hover:bg-white hover:text-neutral-900"
+            @click="navigateTo('/auth/register')"
           />
         </template>
         
