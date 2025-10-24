@@ -19,24 +19,24 @@
       </nav>
       
       <!-- Right Section -->
-      <div class="flex items-center space-x-4">
+      <div class="flex items-center space-x-2">
         <!-- Language Selector -->
-        <Dropdown
-          v-model="selectedLanguage"
-          :options="languages"
-          optionLabel="name"
-          optionValue="code"
-          class="w-16"
-          @change="changeLanguage"
-        />
-        
+        <Menu ref="langMenu" :model="languageMenuItems" :popup="true" />
+        <button
+          @click="toggleLangMenu"
+          class="px-2.5 py-1.5 text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-white hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded transition-colors"
+          aria-label="Change Language"
+        >
+          {{ selectedLanguage.toUpperCase() }}
+        </button>
+
         <!-- Theme Toggle -->
-        <button 
-          @click="toggleDarkMode" 
-          class="p-1.5 text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-white"
+        <button
+          @click="() => isDarkMode = !isDarkMode"
+          class="p-2 text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-white hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded transition-colors"
           aria-label="Toggle Dark Mode"
         >
-          <i :class="[isDarkMode ? 'pi pi-sun' : 'pi pi-moon']"></i>
+          <i :class="[isDarkMode ? 'pi pi-sun' : 'pi pi-moon']" class="text-sm"></i>
         </button>
         
         <!-- Auth Buttons -->
@@ -104,36 +104,42 @@ import { ref, computed } from 'vue'
 import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useAuthStore } from '@/stores/auth'
-import { useDark, useToggle } from '@vueuse/core'
+import { useDark } from '@vueuse/core'
 import Button from 'primevue/button'
 import Avatar from 'primevue/avatar'
 import Menu from 'primevue/menu'
-import Dropdown from 'primevue/dropdown'
 
 const { t, locale } = useI18n()
 const router = useRouter()
 const authStore = useAuthStore()
 
 const userMenu = ref()
+const langMenu = ref()
 const mobileMenuOpen = ref(false)
 const isDarkMode = useDark()
-const toggleDarkMode = useToggle(isDarkMode)
 
 const isAuthenticated = computed(() => authStore.isAuthenticated)
 const user = computed(() => authStore.user)
 const userAvatar = computed(() => user.value?.avatar || 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg')
 
 const selectedLanguage = ref(locale.value)
-const languages = [
-  { name: 'EN', code: 'en' },
-  { name: 'ES', code: 'es' }
-]
 
 const navItems = [
   { path: '/', label: 'nav.home' },
   { path: '/pricing', label: 'nav.pricing' },
   { path: '/dashboard', label: 'nav.dashboard', requiresAuth: true }
 ]
+
+const languageMenuItems = computed(() => [
+  {
+    label: 'English',
+    command: () => changeLanguage('en')
+  },
+  {
+    label: 'Español',
+    command: () => changeLanguage('es')
+  }
+])
 
 const userMenuItems = computed(() => [
   {
@@ -154,6 +160,10 @@ const userMenuItems = computed(() => [
   }
 ])
 
+const toggleLangMenu = (event: Event) => {
+  langMenu.value?.toggle(event)
+}
+
 const toggleUserMenu = (event: Event) => {
   userMenu.value?.toggle(event)
 }
@@ -163,12 +173,13 @@ const navigateTo = (path: string) => {
   mobileMenuOpen.value = false
 }
 
-const changeLanguage = () => {
-  locale.value = selectedLanguage.value
+const changeLanguage = (lang: string) => {
+  selectedLanguage.value = lang
+  locale.value = lang
   if (isAuthenticated.value) {
-    authStore.updateLanguage(selectedLanguage.value)
+    authStore.updateLanguage(lang)
   } else {
-    localStorage.setItem('language', selectedLanguage.value)
+    localStorage.setItem('language', lang)
   }
 }
 </script>
