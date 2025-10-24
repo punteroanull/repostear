@@ -25,14 +25,14 @@
           v-model="selectedLanguage"
           :options="languages"
           optionLabel="name"
-          class="w-24"
+          class="w-16 text-xs"
           @change="changeLanguage"
         />
         
         <!-- Theme Toggle -->
         <button 
           @click="toggleDarkMode" 
-          class="p-2 text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-white"
+          class="p-1.5 text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-white"
           aria-label="Toggle Dark Mode"
         >
           <i :class="[isDarkMode ? 'pi pi-sun' : 'pi pi-moon']"></i>
@@ -42,12 +42,12 @@
         <template v-if="!isAuthenticated">
           <Button 
             :label="$t('auth.login')" 
-            class="p-button-text text-sm" 
+            class="p-button-text text-xs px-2 py-1" 
             @click="navigateTo('/auth/login')" 
           />
           <Button 
             :label="$t('auth.register')" 
-            class="text-sm"
+            class="text-xs px-3 py-1"
             @click="navigateTo('/auth/register')" 
           />
         </template>
