@@ -25,6 +25,7 @@
           v-model="selectedLanguage"
           :options="languages"
           optionLabel="name"
+          optionValue="code"
           class="w-16 text-xs"
           @change="changeLanguage"
         />
