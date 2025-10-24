@@ -36,9 +36,9 @@
             <i class="pi pi-globe text-5xl text-[#0063FF] mb-3"></i>
             <span class="text-lg font-medium">Bluesky</span>
           </div>
-          <div class="flex flex-col items-center opacity-50">
+          <div class="flex flex-col items-center">
             <i class="pi pi-instagram text-5xl text-[#E1306C] mb-3"></i>
-            <span class="text-lg font-medium">Instagram ({{ $t('home.platforms.comingSoon') }})</span>
+            <span class="text-lg font-medium">Instagram ({{ $t('home.platforms.professionalAccounts') }})</span>
           </div>
           <div class="flex flex-col items-center opacity-50">
             <i class="pi pi-facebook text-5xl text-[#4267B2] mb-3"></i>
