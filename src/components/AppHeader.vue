@@ -43,12 +43,12 @@
         <template v-if="!isAuthenticated">
           <Button 
             :label="$t('auth.login')" 
-            class="p-button-text text-xs px-2 py-1" 
+            class="p-button-outlined text-xs px-2 py-1 transition-all duration-150 active:scale-95 active:shadow-inner" 
             @click="navigateTo('/auth/login')" 
           />
           <Button 
             :label="$t('auth.register')" 
-            class="text-xs px-3 py-1"
+            class="text-xs px-3 py-1 transition-all duration-150 active:scale-95 active:shadow-inner"
             @click="navigateTo('/auth/register')" 
           />
         </template>
